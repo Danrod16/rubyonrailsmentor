@@ -6,7 +6,7 @@ Tired of paying 15$/month for Wix, squarespace or webflow?
 
 This doc will guide through creating a simple landing page for your portfolio or business with Lightning Landing, the Tailwind landing page boilerplate that can be hosted for FREE on Github pages.
 
-Checkout our [Demo]([https://docs.lightningrails.com/](https://lightningrails.github.io/lightning-landing/))
+Checkout our [Demo](https://lightningrails.github.io/lightning-landing/)
 
 
 ## Tech Stack
