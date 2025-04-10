@@ -3,516 +3,590 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- change title and description to your own -->
-      <title>SEO frendly title - the keywords you want to rank for</title>
-      <meta name="description" content="SEO frendly description - the keywords you want to rank for">
+      <title>Ruby on Rails Mentor: Your Personal Rails Development Guide</title>
+      <meta name="description" content="Get personalized Ruby on Rails mentorship to accelerate your development journey. From debugging support to career guidance, we're here to help you grow.">
       <link rel="icon" type="image/x-icon" href="images/favicon.ico">
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
-      <!-- Development version -->
       <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-      <!-- Production version -->
       <script src="https://unpkg.com/lucide@latest"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="calculator.js"></script>
+      <script
+        defer
+        data-website-id="67f4ed3d9a49529a1019d979"
+        data-domain="launchbrick.com"
+        src="https://datafa.st/js/script.js">
+      </script>
   </head>
   
-  <!-- DISCLAIMER: This template is an exmaple template, feel free to visit hyperUI.com or DaisyUI.com to change specific section by copy pasting the code -->
-
-  <body data-theme="light">
-      <div class="navbar bg-base-100 fixed top-0 left-0 right-0 z-50">
-          <div class="flex-1">
-              <img src="images/logo.png" alt="Lightning Landing Logo" class="w-10 h-10"> <!-- Change your logo here  -->
-              <a href="/" class="btn btn-ghost text-xl">Lightning Landing</a> <!-- Change your company name here  -->
-          </div>
-          <div class="flex-none">
+  <body data-theme="cupcake" onload="AOS.init();">
+      <!-- Navbar -->
+      <nav class="navbar bg-white fixed top-0 left-0 right-0 z-50" data-aos="fade-down">
+          <div class="container mx-auto flex justify-between items-center px-4">
+              <div class="flex items-center">
+                  <img src="images/logo.png" alt="Ruby on Rails Mentor Logo" class="w-10 h-10">
+                  <a href="/" class="btn btn-ghost text-xl ml-2">Ruby on Rails Mentor</a>
+              </div>
+              <div class="flex-none hidden lg:block">
               <ul class="menu menu-horizontal px-1">
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#pricing">Pricing</a></li>
+                      <li><a href="#about">About Me</a></li>
+                      <li><a href="#how-it-works">How It Works</a></li>
+                      <li><a href="#packages">Subscription Plans</a></li>
                   <li><a href="#testimonials">Testimonials</a></li>
+                      <li><a href="#faq">FAQ</a></li>
+                      <li><a href="https://cal.com/launchbrick/30min" class="btn btn-primary btn-sm">Book a Call</a></li>
               </ul>
           </div>
       </div>
-      <div class="hero bg-base-200 min-h-screen">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-              <!-- Use a screenshot/demo/image of your best work that instantly shows value -->
-              <!-- Replace the hero-image.png in the images folder with your own image -->
-              <img src="images/hero-picture.png" class="max-w-sm rounded-lg shadow-2xl lg:max-w-xl" alt="Portfolio showcase of successful client projects" />
-              <div>
-                  <!-- Keep it short, focus on the value you deliver -->
-                  <h1 class="text-5xl font-bold">We Turn Your Ideas Into Successful Products</h1>
-                  <!-- Explain how you deliver on the promise, be specific -->
-                  <p class="py-6">Our team of expert developers and designers craft custom software solutions that help businesses scale and delight their customers.</p>
-                  <div class="flex flex-col items-start">
-                      <!-- Action-oriented CTA that creates urgency -->
-                      <a href="#cta" class="btn btn-primary">Schedule Free Consultation</a>
-                      <!-- Social Proof: Change profile picture of users to your own profile picture and text to your own text-->
-                      <div class="avatar-group -space-x-6 rtl:space-x-reverse mt-3">
+      </nav>
+
+      <!-- 1. Hero Section -->
+      <section class="hero min-h-screen pt-16 pb-16" data-aos="fade-up">
+          <div class="container mx-auto flex flex-col lg:flex-row-reverse items-center px-4">
+              <img src="images/hero.png" class="max-w-xl w-full rounded-xl shadow-lg mb-4 sm:mb-0" alt="MVP Builder Dashboard" />
+              <div class="text-center lg:text-left lg:mr-8">
+                  <div class="badge badge-outline mb-4">NEW: Pro Mentorship Plan</div>
+                  <h1 class="text-5xl font-bold">Never get stuck again — have a <span class="text-primary">Senior Rails Mentor</span> by your side at all times<br></h1>
+                  <p class="py-6">Get unlimited support tickets, personalized guidance, and expert advice to accelerate your Ruby on Rails journey. Whether you're stuck on a bug, planning your career path, or starting a startup, I'm here to help.</p>
+                  <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                      <a href="#packages" class="btn btn-primary">Get Mentorship</a>
+                      <a href="https://cal.com/launchbrick/30min" class="btn btn-outline">Book a Demo Call</a>
+                  </div>
+                  <div class="mt-6">
+                      <p class="text-sm text-gray-600">Helping hundreds of junior developers since 2020</p>
+                      <div class="flex mt-2 justify-center lg:justify-start">
+                          <div class="avatar-group -space-x-4">
                           <div class="avatar">
-                              <div class="w-12">
-                                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                  <div class="w-8">
+                                      <img src="images/max.png" alt="Ruby on rails beginner Max" />
+                                  </div>
+                              </div>
+                              <div class="avatar">
+                                  <div class="w-8">
+                                      <img src="images/sugi.png" alt="Ruby on rails beginner Sugir" />
                               </div>
                           </div>
                           <div class="avatar">
-                              <div class="w-12">
-                                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                  <div class="w-8">
+                                      <img src="images/eva.png" alt="Ruby on rails beginner Eva" />
+                          </div>
                               </div>
                           </div>
-                          <div class="avatar">
-                              <div class="w-12">
-                                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                              </div>
-                          </div>
-                          <div class="avatar placeholder">
-                              <div class="bg-neutral text-neutral-content w-12">
-                                  <span>+99</span>
-                              </div>
-                          </div>
+                          <span class="ml-3 text-gray-600 flex items-center">100+ students helped</span>
                       </div>
-                      <small class="text-gray-500">Trusted by 100+ companies</small>
                   </div>
               </div>
           </div>
-      </div>
-      <!-- The problem we solve -->
-      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div class="mx-auto max-w-lg text-center">
-              <!-- Change the text to your own text, explain the problem you solve and try to use data to make it more convincing-->
-              <h2 class="text-2xl font-bold md:text-3xl">Most startups spend more than 4000€ on their website</h2>
-              <p class="hidden sm:mt-4 sm:block">2000€ is the average cost of a website in Germany, maintenance costs and hosting is often not included in the price.</p>
-          </div>
-          <div class="mx-auto mt-8 max-w-xl">
-              <img src="images/problem.png" alt="Problem" class="w-full rounded-lg shadow-2xl">
-          </div>
-      </div>
-      <!-- Our Services -->
-      <div class="my-20" id="services">
-          <div class="container mx-auto px-12 bg-base-200 rounded-lg p-12">
-              <h2 class="text-4xl font-bold text-base-content">Why choose us?</h2>
-              <p class="mb-4 mt-2 text-base-content/80">Our customers choose us because we offer a wide range of services to meet their needs at the best price.</p>
-              <!-- Add screenshots of your best work here, make it visually appealing, jsut replace the serviceN.png with your own images -->
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 col-span-1 min-h-[200px] bg-[url('/images/service1.png')] bg-cover bg-center group hover:bg-base-100/90">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Website designed & developed in less than 10 days</h2>
-                      </div>
-                  </div>
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 lg:col-span-2 min-h-[200px] bg-[url('/images/service2.png')] bg-cover bg-center group hover:bg-primary">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Fixed price for all our services, no hidden costs</h2>
-                      </div>
-                  </div>
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 lg:col-span-2 min-h-[200px] bg-[url('/images/service3.png')] bg-cover bg-center group hover:bg-primary">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Unlimited revisions until you're 100% satisfied</h2>
-                      </div>
-                  </div>
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 col-span-1 min-h-[200px] bg-[url('/images/service4.png')] bg-cover bg-center group hover:bg-primary">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Best price in the market</h2>
-                      </div>
-                  </div>
-              </div>
-              </div>
-          </div>
-      </div>
-      <!-- pricing -->
-      <div class="py-24 sm:py-32" id="pricing">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl sm:text-center">
-              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Affordable website development</h2>
-              <p class="mt-6 text-lg leading-8">Get your professional website built in less than 10 days at a fixed price that's significantly lower than the market average of 4000€.</p>
-            </div>
-            <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-              <div class="p-8 sm:p-10 lg:flex-auto">
-                <h3 class="text-2xl font-bold tracking-tight">Complete Website Package</h3>
-                <p class="mt-6 text-base leading-7">Everything you need to get your professional website up and running, with unlimited revisions until you're completely satisfied.</p>
-                <div class="mt-10 flex items-center gap-x-4">
-                  <h4 class="flex-none text-sm font-semibold leading-6">What's included</h4>
-                  <div class="h-px flex-auto"></div>
+      </section>
+
+      <section class="pt-0 pb-16 mb-10">
+        <div class="container mx-auto px-4">
+        <div class="mt-8 text-center">
+            <div class="stats shadow-lg flex justify-center p-10">
+                <div class="stat mx-4">
+                    <div class="stat-figure text-primary">
+                        <i data-lucide="check-circle" class="w-8 h-8"></i>
+                    </div>
+                    <div class="stat-title">Response Time</div>
+                    <div class="stat-value text-primary">< 12h</div>
+                    <div class="stat-desc">Average response time</div>
                 </div>
-                <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 sm:grid-cols-2 sm:gap-6">
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    Custom website design
-                  </li>
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    Mobile-responsive layout
-                  </li>
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    Unlimited revisions
-                  </li>
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    10-day delivery
-                  </li>
-                </ul>
-              </div>
-              <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                <div class="rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                  <div class="mx-auto max-w-xs px-8">
-                    <p class="text-base font-semibold">Pay once, own it forever</p>
-                    <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                      <span class="text-5xl font-bold tracking-tight">950</span>
-                      <span class="text-sm font-semibold leading-6 tracking-wide">USD</span>
-                    </p>
-                    <a href="#cta" class="btn btn-primary mt-4">Join the waitlist</a>
-                    <p class="mt-6 text-xs leading-5">Invoices and receipts available for easy company reimbursement</p>
+                <div class="stat mx-4">
+                    <div class="stat-figure text-secondary">
+                        <i data-lucide="calendar-clock" class="w-8 h-8"></i>
+                    </div>
+                    <div class="stat-title">No Lock-in</div>
+                    <div class="stat-value text-secondary">Pause</div>
+                    <div class="stat-desc">Anytime you need</div>
+      </div>
+                <div class="stat mx-4">
+                    <div class="stat-figure text-accent">
+                        <i data-lucide="trending-up" class="w-8 h-8"></i>
+          </div>
+                    <div class="stat-title">Scale</div>
+                    <div class="stat-value text-accent">Up/Down</div>
+                    <div class="stat-desc">As your needs change</div>
+          </div>
+      </div>
+                      </div>
                   </div>
+      </section>
+
+      <!-- 2. How It Works -->
+      <section class="py-24 bg-base-100" id="how-it-works" data-aos="fade-up">
+          <div class="container mx-auto px-4">
+              <h2 class="text-3xl font-bold text-center mb-12">How Rails Mentorship Works</h2>
+              
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="card" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body items-center text-center">
+                          <div class="tooltip">
+                              <div class="tooltip-content">
+                                  <h3 class="text-primary text-3xl font-extrabold mb-2">Step 1</h3>
+                                  <h4 class="text-base-content text-xl font-semibold mb-4">Choose Your Plan & Connect</h4>
+                              </div>
+                              <img src="images/chose-plan.png" alt="Choose Your Mentorship Plan" class="mb-4 w-full h-62 object-contain rounded-lg" />
+                          </div>
+                          <p class="text-base-content text-base">Choose a mentorship tier that suits your needs. Start with asynchronous help or opt for 1:1 sessions.</p>
+                      </div>
+                  </div>
+                  
+                  <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="card-body items-center text-center">
+                          <div class="tooltip">
+                              <div class="tooltip-content">
+                                  <h3 class="text-primary text-3xl font-extrabold mb-2">Step 2</h3>
+                                  <h4 class="text-base-content text-xl font-semibold mb-4">Get Support When You Need It</h4>
+                              </div>
+                              <img src="images/support.png" alt="Get Rails Support" class="mb-4 w-full h-62 object-contain rounded-lg" />
+                          </div>
+                          <p class="text-base-content text-base">Create support tickets anytime you're stuck, need code review, or want career advice. Get detailed responses with explanations and best practices. Join scheduled calls for deeper discussions and pair programming.</p>
+                      </div>
+                  </div>
+                  <div class="card" data-aos="fade-up" data-aos-delay="300">
+                      <div class="card-body items-center text-center">
+                          <div class="tooltip">
+                              <div class="tooltip-content">
+                                  <h3 class="text-primary text-3xl font-extrabold mb-2">Step 3</h3>
+                                  <h4 class="text-base-content text-xl font-semibold mb-4">Grow & Progress</h4>
+                              </div>
+                              <img src="images/grow.png" alt="Grow as a ruby on rails developer" class="mb-4 w-full h-62 object-cover overflow-hidden rounded-lg" />
+                          </div>
+                          <p class="text-base-content text-base">Track your progress, build your portfolio, and advance your Rails career. Adjust your mentorship plan as you grow, focusing on increasingly complex challenges and career opportunities.</p>
+                      </div>
+                  </div>
+              </div>
+              </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="py-24 bg-base-100 mt-10" id="about" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="w-64 h-64 rounded-full bg-base-300 flex overflow-hidden">
+                        <figure class="diff aspect-16/9 rounded-lg shadow-lg overflow-hidden" tabindex="0">
+                          <div class="diff-item-1" role="img">
+                            <img
+                            alt="Daniel Rodriguez your Rails mentor"
+                            src="images/dani-irl.png" class="rounded-full h-64 w-64" />
+          </div>
+                          <div class="diff-item-2" role="img" tabindex="0">
+                            <img alt="Daniel Rodriguez your Rails mentor" src="images/dani.png" class="rounded-full h-64 w-64 object-top" />
+      </div>
+                          <div class="diff-resizer"></div>
+                        </figure>
+            </div>
+                </div>
+                <div class="lg:w-2/3">
+                    <h2 class="text-3xl font-bold mb-6">Meet Your Rails Mentor</h2>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">
+                            Hi, I'm Dani! For the past 5 years, I've been teaching Ruby on Rails to aspiring developers at Le Wagon, one of Europe's top coding bootcamps. I've helped hundreds of students transform from beginners to confident Rails developers.
+                        </p>
+                        <p class="mb-4">
+                            I specialize in MVP development and helping developers build robust, maintainable applications. Whether you're stuck on a bug, planning your next startup, or preparing for a job interview, I'm here to guide you.
+                        </p>
+                        <p class="mb-4">
+                            I understand the challenges junior Rails developers face because I've helped so many overcome them. My mentorship approach combines technical guidance with career development, ensuring you not only write better code but also grow as a professional developer or texh entrepreneur.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-6">
+                            <div class="badge badge-primary">Ruby on Rails</div>
+                            <div class="badge badge-primary">Test-Driven Development</div>
+                            <div class="badge badge-primary">API Design</div>
+                            <div class="badge badge-primary">Database Design</div>
+                            <div class="badge badge-primary">Code Review</div>
+                            <div class="badge badge-primary">Career Guidance</div>
+                            <div class="badge badge-primary">Best Practices</div>
+                        </div>
+                        <div class="flex flex-wrap gap-4 mt-6">
+                            <a href="https://malt.com/profile/daniel-rodriguez" target="_blank">
+                              <img src="images/malt.png" alt="Malt Badge" class="h-24 transition-transform transform hover:scale-110">
+                            </a>
+                            <a href="https://lewagon.com/" target="_blank">
+                              <img src="images/lewagon.png" alt="Lewagon Badge" class="h-24 transition-transform transform hover:scale-110">
+                            </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Testimonials -->
-          <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16" id="testimonials">
-            <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl">
-              Read trusted reviews from our customers
-            </h2>
-            <div class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-200">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                    consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-                    error officiis atque voluptates magnam!
-                  </p>
-                </blockquote>
+    </section>
+      <!-- 3. Subscription Plans -->
+      <section class="py-24 bg-base-200" id="packages" data-aos="fade-up">
+          <div class="container mx-auto px-4">
+              <div class="text-center max-w-3xl mx-auto mb-12">
+                  <h2 class="text-3xl font-bold mb-4">Effortless Pricing, Maximum Value</h2>
+                  <p class="text-lg">Have a dedicated Ruby on Rails mentor by your side at all times. Choose from my flexible plans.</p>
               </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
+              
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="card bg-primary text-primary-content shadow-xl relative hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                      <div class="badge badge-secondary absolute -top-3 left-1/2 transform -translate-x-1/2">MOST POPULAR</div>
+                      <div class="card-body">
+                          <h3 class="card-title text-xl">Starter Bricks</h3>
+                          <div class="text-3xl font-bold my-4">
+                              <span>€59.99</span>
+                              <span class="text-sm font-normal">/month</span>
+                          </div>
+                          <div class="badge badge-accent mb-3">UNLIMITED TICKETS</div>
+                          <p class="mb-4">Perfect for developers who need reliable asynchronous support.</p>
+                          <ul class="space-y-2 mb-6">
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary-content"></i>
+                                  <span>Unlimited support tickets</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary-content"></i>
+                                  <span>Technical problem solving</span>
+                              </li>
+                              <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-primary-content"></i>
+                                <span>Career development guidance</span>
+                              </li>
+                              <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-primary-content"></i>
+                                <span>Startup guidance</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary-content"></i>
+                                  <span>Code reviews</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary-content"></i>
+                                  <span>Best practices advice</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary-content"></i>
+                                  <span>Strategic app planning</span>
+                              </li>
+                          </ul>
+                          <div class="badge badge-outline mb-3">1 WEEK FREE TRIAL</div>
+                          <a href="https://buy.stripe.com/fZe03l4O35Ga4Jq6oo" class="btn bg-white text-primary mt-auto">Subscribe Now</a>
                       </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-600">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad mollitia rerum quo unde
-                    neque atque molestias quas pariatur! Sint, maxime?
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit esse delectus,
-                    maiores fugit, reiciendis culpa inventore sint accusantium libero dolore eos quasi a ex
-                    aliquam molestiae. Tenetur hic delectus maxime.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, fuga?
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate officia natus
-                    blanditiis rerum incidunt ex autem repudiandae doloribus eveniet quia? Culpa commodi
-                    quae atque perspiciatis? Provident, magni beatae saepe porro aspernatur facere neque
-                    sunt possimus assumenda perspiciatis aperiam quisquam animi libero voluptatem fuga.
-                    Repudiandae, facere? Nemo reprehenderit quas ratione quis.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, rerum. Nobis laborum
-                    praesentium necessitatibus vero.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat quasi ipsa
-                    repellendus quam! Beatae pariatur quia distinctio fugit repellendus repudiandae nostrum
-                    consectetur quibusdam quo.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
                   </div>
 
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, modi!
-                  </p>
-                </blockquote>
-              </div>
-
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
+                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl">Builder Set</h3>
+                          <div class="text-3xl font-bold my-4">€149.99<span class="text-sm font-normal">/month</span></div>
+                          <div class="badge badge-accent mb-3">WEEKLY CALLS</div>
+                          <p class="mb-4">For developers who want regular 1:1 guidance and support.</p>
+                          <ul class="space-y-2 mb-6">
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Weekly 1:1 mentorship call</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Unlimited support tickets</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Technical problem solving</span>
+                              </li>
+                              <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                <span>Career development guidance</span>
+                              </li>
+                              <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                <span>Startup guidance</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Code reviews</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Best practices advice</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Strategic app planning</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Free access to <a href="https://lightningrails.com/?ref='launchbrick" class="link link-hover">Lightning Rails boilerplate</a></span>
+                              </li>
+                          </ul>
+                          <a href="https://buy.stripe.com/dR6bM30xNd8Cfo47st" class="btn btn-outline btn-primary mt-auto">Subscribe Now</a>
                     </div>
                   </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam numquam, unde molestiae
-                    commodi temporibus dicta.
-                  </p>
-                </blockquote>
+                  
+                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl">Master Builder</h3>
+                          <div class="text-3xl font-bold my-4">€599<span class="text-sm font-normal">/month</span></div>
+                          <div class="badge badge-accent mb-3">UNLIMITED CALLS</div>
+                          <p class="mb-4">For developers who want unlimited access to expert Rails guidance.</p>
+                          <ul class="space-y-2 mb-6">
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Unlimited mentorship calls</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Unlimited support tickets</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Technical problem solving</span>
+                              </li>
+                              <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                <span>Career development guidance</span>
+                              </li>
+                              <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                <span>Startup guidance</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Code reviews</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Best practices advice</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Strategic app planning</span>
+                              </li>
+                              <li class="flex items-center">
+                                  <i data-lucide="check" class="w-5 h-5 mr-2 text-primary"></i>
+                                  <span>Free access to <a href="https://lightningrails.com/?ref='launchbrick" class="link link-hover">Lightning Rails boilerplate</a></span>
+                              </li>
+                          </ul>
+                          <a href="https://cal.com/launchbrick/30min" class="btn btn-outline btn-primary mt-auto">Get Started</a>
+                    </div>
+                  </div>
               </div>
-            </div>
           </div>
-      <!-- FAQ -->
-      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 sm:py-12 lg:px-8 lg:py-16 my-26" id="faq">
+      </section>
+
+      <!-- 5. Task Definition -->
+      <section class="py-24 bg-base-100 mt-10">
+          <div class="container mx-auto px-4">
+              <h2 class="text-3xl font-bold text-center mb-4">What Counts as a Support Ticket?</h2>
+              <p class="text-center mb-12 max-w-2xl mx-auto">To ensure you get the most out of your subscription, it's important to understand what constitutes a support ticket. Remember, the goal is for you to learn and grow, not for me to build the app for you. Here's how we define a support ticket:</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div class="card bg-base-200 shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                          <h3 class="card-title text-success flex items-center">
+                              <i data-lucide="check-circle" class="w-6 h-6 mr-2"></i>
+                              Examples of Suitable Support Tickets
+                          </h3>
+                          <ul class="mt-4 space-y-2">
+                              <li class="flex items-start">
+                                  <i data-lucide="check" class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Guidance on how to implement a user profile page with basic details</span>
+                              </li>
+                              <li class="flex items-start">
+                                  <i data-lucide="check" class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Help with debugging a form validation issue</span>
+                              </li>
+                              <li class="flex items-start">
+                                  <i data-lucide="check" class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Advice on setting up email notifications for user actions</span>
+                              </li>
+                              <li class="flex items-start">
+                                  <i data-lucide="check" class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Tips for designing an admin dashboard layout</span>
+                              </li>
+                              <li class="flex items-start">
+                                  <i data-lucide="check" class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Assistance with integrating a third-party API</span>
+                              </li>
+                          </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="card bg-base-200 shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                      <div class="card-body">
+                          <h3 class="card-title text-error flex items-center">
+                              <i data-lucide="alert-circle" class="w-6 h-6 mr-2"></i>
+                              Not Suitable for a Single Support Ticket
+                          </h3>
+                          <ul class="mt-4 space-y-2">
+                              <li class="flex items-start">
+                                  <i data-lucide="x" class="w-5 h-5 text-error mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Requesting a complete messaging system with chat rooms to be built (this would require multiple tickets)</span>
+                              </li>
+                              <li class="flex items-start">
+                                  <i data-lucide="x" class="w-5 h-5 text-error mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Asking for an entire e-commerce checkout flow to be developed (this would be multiple tickets)</span>
+                              </li>
+                              <li class="flex items-start">
+                                  <i data-lucide="x" class="w-5 h-5 text-error mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Developing a complex reporting dashboard with multiple charts (this would require several tickets)</span>
+                              </li>
+                              <li class="flex items-start">
+                                  <i data-lucide="x" class="w-5 h-5 text-error mt-0.5 mr-2 flex-shrink-0"></i>
+                                  <span>Building a complete membership system with different access levels (this would be multiple tickets)</span>
+                              </li>
+                          </ul>
+                          <div class="mt-4 bg-base-300 p-4 rounded-lg">
+                              <p class="text-sm">Don't worry!I'll help you break down your project into manageable support tickets that align with your learning goals.</p>
+              </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- 5. Testimonials -->
+      <section class="py-24 bg-primary mt-10" id="testimonials" data-aos="fade-up">
+          <div class="container mx-auto px-4">
+              <h2 class="text-3xl font-bold text-center mb-12 text-primary-content">What Our Students Say</h2>
+              
+              <script src="https://widget.senja.io/widget/966809dd-f22f-4200-8789-da65a8fcaffa/platform.js" type="text/javascript" async></script>
+              <div class="senja-embed" data-id="966809dd-f22f-4200-8789-da65a8fcaffa" data-mode="shadow" data-lazyload="false" style="display: block; width: 100%;"></div>
+          </div>
+      </section>
+
+      <!-- 6. FAQ -->
+      <section class="py-24 bg-base-100 mt-10" id="faq" data-aos="fade-up">
+          <div class="container mx-auto px-4">
         <div class="grid gap-4 lg:grid-cols-3 lg:gap-8">
         <div class="h-auto">
-            <h2 class="text-base font-semibold leading-7 text-primary">Common Questions</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Frequently Asked Questions</p>
-            <p class="mt-6 text-lg leading-8">Everything you need to know about our web development service</p>
+                      <h2 class="text-base font-semibold leading-7 text-primary">Questions?</h2>
+                      <p class="mt-2 text-3xl font-bold tracking-tight">Frequently Asked Questions</p>
+                      <p class="mt-6 text-lg leading-8">Everything you need to know about the Rails mentorship service.</p>
         </div>
         <div class="h-auto lg:col-span-2">
           <div class="join join-vertical w-full">
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+                          <div class="collapse collapse-arrow join-item border-base-300 border" data-aos="fade-up" data-aos-delay="100">
                 <input type="radio" name="my-accordion-4" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What's included in the website package?</div>
+                              <div class="collapse-title text-xl font-medium">What kind of support can I expect?</div>
+                              <div class="collapse-content">
+                                  <p>You'll receive personalized support through our ticket system and scheduled calls, tailored to your chosen plan. This includes assistance with debugging, code reviews, architectural guidance, best practices advice, and career development support. We ensure detailed explanations with each response, helping you understand both the solution and the reasoning behind it.</p>
+                              </div>
+                          </div>
+                          <div class="collapse collapse-arrow join-item border-base-300 border" data-aos="fade-up" data-aos-delay="200">
+                              <input type="radio" name="my-accordion-4" />
+                              <div class="collapse-title text-xl font-medium">How quickly will I get responses to my questions?</div>
+                              <div class="collapse-content">
+                                  <p>For the Basic plan, expect responses within 12 hours during business days. Advanced and Premium plan members receive priority support with even faster response times. All responses are thoughtful and detailed, focusing on solving your immediate problem and enhancing your learning experience.</p>
+                              </div>
+                          </div>
+                          <div class="collapse collapse-arrow join-item border-base-300 border" data-aos="fade-up" data-aos-delay="300">
+                              <input type="radio" name="my-accordion-4" />
+                              <div class="collapse-title text-xl font-medium">What skill level is required to start?</div>
+                              <div class="collapse-content">
+                                  <p>The mentorship is suitable for all skill levels, from beginners who've just completed a bootcamp to intermediate developers looking to level up. We'll adapt the guidance and explanations to match your current understanding and help you progress at your own pace. The key is having a basic understanding of Ruby and a willingness to learn.</p>
+                              </div>
+                          </div>
+                          <div class="collapse collapse-arrow join-item border-base-300 border" data-aos="fade-up" data-aos-delay="400">
+                              <input type="radio" name="my-accordion-4" />
+                              <div class="collapse-title text-xl font-medium">What topics are covered in the mentorship?</div>
+                              <div class="collapse-content">
+                                  <p>We cover all aspects of Ruby on Rails development, including: Ruby fundamentals, Rails conventions and best practices, database design and ActiveRecord, testing strategies, API development, deployment and DevOps basics, code optimization, and security best practices. We also address career development topics like interview preparation and portfolio building.</p>
+                              </div>
+                          </div>
+                          <div class="collapse collapse-arrow join-item border-base-300 border" data-aos="fade-up" data-aos-delay="500">
+                              <input type="radio" name="my-accordion-4" />
+                              <div class="collapse-title text-xl font-medium">How are the mentorship calls structured?</div>
                 <div class="collapse-content">
-                <p>Our complete website package includes everything you need for a professional online presence:</p>
-                <ul class="list-disc pl-6 mt-2">
-                  <li>Custom website design tailored to your brand</li>
-                  <li>Mobile-responsive layout that works on all devices</li>
-                  <li>Unlimited revisions until you're completely satisfied</li>
-                  <li>Fast 10-day delivery timeline</li>
-                  <li>Professional consultation to understand your needs</li>
-                </ul>
+                                  <p>Mentorship calls (available in Advanced and Premium plans) are focused sessions where we can dive deep into your code, do pair programming, or discuss broader career topics. You can use these calls for code reviews, architecture planning, debugging sessions, or career guidance. The agenda is flexible and driven by your needs.</p>
             </div>
             </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+                          <div class="collapse collapse-arrow join-item border-base-300 border" data-aos="fade-up" data-aos-delay="550">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">How does the payment process work?</div>
+                              <div class="collapse-title text-xl font-medium">Can I change or cancel my subscription?</div>
                 <div class="collapse-content">
-                <p>We offer a simple, one-time payment of $950 USD. Once the payment is processed, we'll begin work on your website immediately. You'll receive a professional invoice that can be used for company reimbursement if needed.</p>
+                                  <p>Yes! You can upgrade, downgrade, or cancel your subscription at any time. There are no long-term commitments required. If you need to pause your mentorship for any reason, you can do so and resume when you're ready. All plans are billed monthly, and you can make changes before your next billing cycle.</p>
                 </div>
             </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+                          <div class="collapse collapse-arrow join-item border-base-300 border" data-aos="fade-up" data-aos-delay="600">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">What happens after I join the waitlist?</div>
+                              <div class="collapse-title text-xl font-medium">How do I get started?</div>
                 <div class="collapse-content">
-                <p>After joining the waitlist, we'll contact you to schedule an initial consultation. During this call, we'll discuss your website needs, timeline, and answer any questions you might have. Once we agree to proceed, we'll begin the design process immediately.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">What if I need changes after the website is complete?</div>
-                <div class="collapse-content">
-                    <p>We offer unlimited revisions during the development process to ensure you're completely satisfied with your website. After the website is complete, we'll provide clear documentation on how to make basic updates yourself. For major changes, we offer affordable maintenance packages.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">Why is your price lower than the market average?</div>
-                <div class="collapse-content">
-                    <p>We've streamlined our development process and use modern tools that allow us to work efficiently without compromising on quality. This enables us to offer professional websites at a fraction of the typical market price of 4000€, making quality web development accessible to more businesses.</p>           
-                </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">Do you provide hosting and domain services?</div>
-                <div class="collapse-content">
-                    <p>Yes! We can help you set up hosting and acquire a domain name for your website. We'll recommend reliable and cost-effective hosting solutions that ensure your website loads quickly and remains secure. We can either manage these services for you or provide guidance if you prefer to handle them yourself.</p>
+                                  <p>Getting started is easy! Choose your preferred plan and book a free introduction call. During this call, we'll discuss your goals, assess your current skill level, and create a personalized learning plan. After that, you'll get immediate access to the support system and can start submitting your questions and scheduling calls (depending on your plan).</p>
                 </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- final CTA -->
-        <section class="mb-12 lg:mb-24">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-              <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-                  <h2 class="text-3xl font-extrabold sm:text-4xl">
-                      <span class="block">
-                          Ready to get your professional website?
-                      </span>
-                      <span class="block">
-                          Join our waitlist today and save 75%.
-                      </span>
-                  </h2>
-                  <div class="lg:mt-0 lg:flex-shrink-0">
-                      <div class=" inline-flex rounded-md shadow mt-8 lg:mt-0">
-                          <a href="#" class="btn btn-primary">Join the waitlist</a>
+      </section>
+
+      <!-- 7. Final CTA -->
+      <div class="py-24 bg-primary text-primary-content mt-10" id="cta" data-aos="fade-up">
+          <div class="container mx-auto px-4">
+              <div class="max-w-3xl mx-auto text-center">
+                  <h2 class="text-3xl font-bold mb-4">Ready to Accelerate Your Rails Journey?</h2>
+                  <p class="mb-8">Join a supportive mentorship program designed to help you become a confident Rails developer. Limited spots available to ensure quality support for each developer.</p>
+                  <div class="card bg-base-100 text-neutral max-w-md mx-auto" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl mb-4">Book Your Free Intro Call</h3>
+                          <p class="mb-4">Let's discuss your goals and find the right mentorship plan for your development journey.</p>
+                          <a href="https://cal.com/launchbrick/30min" class="btn btn-primary btn-block">Schedule Your Call</a>
+                          <p class="mt-4 text-sm">No commitment required for the initial consultation</p>
                       </div>
                   </div>
               </div>
           </div>
-      </section>
+      </div>
+
           <!-- Footer -->
-      <footer class="footer bg-neutral text-neutral-content p-10">
+      <footer class="footer bg-neutral text-neutral-content p-16 mt-0" data-aos="fade-up">
           <aside>
-              <i data-lucide="hash" class="w-12 h-12git remote remove origin
-              "></i>
-              <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+              <img src="images/logo.png" alt="Launch Brick Logo" class="w-12 h-12" />
+              <p><span class="font-bold">Launch Brick</span> - Your subscription-based MVP partner since 2019</p>
+              <div class="flex flex-wrap gap-4 mt-6">
+                <a href="https://lightningrails.com/?ref='launchbrick" class="link link-hover">Powered by Lightningrails</a>
+              </div>
+              <p class="mt-4 text-sm">BRIGHTWORKS DIGITAL PTE. LTD.<br>Business Registration: 202504662W<br>2 VENTURE DRIVE, #19-21<br>VISION EXCHANGE, SINGAPORE 608526</p>
           </aside>
           <nav>
-              <h6 class="footer-title">Social</h6>
+              <h6 class="footer-title">Navigation</h6>
+              <a href="#" class="link link-hover">Home</a>
+              <a href="#about" class="link link-hover">About Me</a>
+              <a href="#how-it-works" class="link link-hover">How It Works</a>
+              <a href="#packages" class="link link-hover">Subscription Plans</a>
+              <a href="#testimonials" class="link link-hover">Testimonials</a>
+              <a href="#faq" class="link link-hover">FAQ</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a href="legal/terms.html" class="link link-hover">Terms and Conditions</a>
+            <a href="legal/privacy.html" class="link link-hover">Privacy Policy</a>
+            <a href="legal/refund.html" class="link link-hover">Refund Policy</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Other projects</h6>
+            <a href="https://lightningrails.com/?ref='launchbrick" class="link link-hover">Ruby on Rails Boilerplate</a>
+            <a href="https://mariaba.com/?ref='launchbrick" class="link link-hover">Maria BA: Unlimited design</a>
+            <a href="https://chromewebstore.google.com/detail/papaya-ranking-domain-ran/gefkkjihmfkognpmaikcopppcjdjngpn" class="link link-hover">Papaya Rank: Domain analysis</a>
+            <a href="https://library.mariaba.com" class="link link-hover">Free illustrations generator</a>
+          </nav>
+          <nav>
+              <h6 class="footer-title">Connect</h6>
               <div class="grid grid-flow-col gap-4">
-                  <a>
+                  <a href="https://x.com/daniel_rrsr" target="_blank">
                       <i data-lucide="twitter" class="w-6 h-6"></i>
                   </a>
-                  <a>
-                      <i data-lucide="youtube" class="w-6 h-6"></i>
+                  <a href="https://www.linkedin.com/in/daniel-rodriguez-romero/" target="_blank">
+                      <i data-lucide="linkedin" class="w-6 h-6"></i>
                   </a>
-                  <a>
-                      <i data-lucide="facebook" class="w-6 h-6"></i>
+                  <a href="https://github.com/Danrod16" target="_blank">
+                      <i data-lucide="github" class="w-6 h-6"></i>
                   </a>
+              </div>
+              <div class="mt-4">
+                  <a class="btn btn-primary btn-sm" href="#" onclick="window.chatbase.open()">Chat With Us</a>
               </div>
           </nav>
       </footer>
-      <script src="https://unpkg.com/lucide@latest"></script>
       <script>
         lucide.createIcons();
+       </script>
+      <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="8WDOXySFzbMEemqLdDNLv";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
       </script>
   </body>
 </html>
